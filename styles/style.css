@@ -1,0 +1,120 @@
+/*Importo Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&family=Poppins:wght@500&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/*Reseteo*/
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+h1 {
+    /*Titulo de todas las paginas (WALKMANIA)*/
+    height: 60px;
+    background-color: cornsilk;
+    color:crimson;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+}
+
+h2 {
+    /*Subtitulo de todas las paginas (La WEB de los.....)*/
+    background-color: cornsilk;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+h3 {
+    /*Titulo de cada pagina del sitio*/
+    text-align: center;
+    padding: 40px;
+    height: 80px;
+    font-size: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: italic;
+    color: blue;
+}
+
+h6{
+    /*Solo se utiliza para los Footers*/
+    color: chocolate;
+    margin-top: 60px;
+    padding: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    display: inline;
+}
+
+nav{
+    text-align: right;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    color: crimson;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+    font-size: 20px;
+    margin: 20px
+    /*Aquí debe ir la propiedad que lo ubica a la derecha*/
+}
+
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 40px;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: bisque;
+    margin: 20px;
+}
+
+form {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+}
+
+.quienes_somos p{
+    text-align: center;
+    color: darkblue;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.boton {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: blue;
+    background-color:aquamarine;
+    padding: 10px;
+}
+
+.galeria img{
+    padding: 10px;
+    display: inline-block;  
+    width: 600px; 
+    height: 600px;
+}
+
+form p {
+    color: rgb(33, 8, 110);
+}
+
+.selector  {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+

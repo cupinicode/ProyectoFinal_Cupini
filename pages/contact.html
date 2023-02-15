@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo</title>
+    <!--Enlace al archivo CSS-->
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<header>
+    <h1 id="top">WALKMANIAC</h1>
+    <h2>La WEB de los fanaticos de los Walkmans</h2>
+    <nav>
+        <ul>
+            <li><a href="../pages/archive.html">Archivo</a></li>
+            <li><a href="../pages/gallery.html">Galeria</a></li>
+            <li><a href="../pages/about-us.html">Sobre nosotros</a></li>
+            <li><a href="../pages/contact.html">Contacto</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <h3>Completa el formulario</h3>
+    <form>
+        <p>Ingresa tu nombre y apellido</p>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido">
+
+        <p>Ingresa tu correo electrónico</p>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+
+        <p>Ingresa tu telefono</p>
+        <label for="celular">Celular</label>
+        <input type="radio" name="contacto" id="celular">
+
+        <label for="fijo">Telefono Fijo</label>
+        <input type="radio" name="contacto" id="fijo">
+
+        <label for="numero">Número</label>
+        <input type="tel" id="numero">
+
+        <p>Como nos conociste ?</p>
+        <select class="selector" name="como_conociste">
+            <option value="W">En la web</option>
+            <option value="G">En medios graficos</option>
+            <option value="T">En la TV o Radio</option>
+            <option value="R">En redes sociales</option>
+        </select>
+
+        <p>Dejanos tu consulta o comentario</p>
+        <div>
+            <textarea name="" id="" cols="60" rows="10" placeholder="comentarios"></textarea>
+        </div>    
+
+        <input class="boton" type="submit" value="ENVIAR"><input class="boton" type="reset" value="CANCELAR">
+
+
+    </form>
+    <p>Donde estamos</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.409409668164!2d-58.49125758423636!3d-34.61909286581988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9c325d888df%3A0xd0c3ca3f9a4e9f96!2sComuna%2011%2C%20Alejandro%20Magari%C3%B1os%20Cervantes%203754%2C%20C1407FDJ%20CABA!5e0!3m2!1ses-419!2sar!4v1673497884398!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+
+<footer>
+    <h6>&copy 2023 Jorge Cupini</h6>
+    <a href="https://wa.me/541149735001/?text=Te%20contacto%20desde%20Walkmaniac" target="_blank">
+        <img src="../assets/img/logo-wasap.png" width="50" height="50">
+    </a>
+    <a href="http:instagram.com" target="_blank">
+        <img src="../assets/img/instagram.png" width="50" height="50"></a>
+    <a href="#top"><img src="../assets/img/top2.png" width="50" height="50"></a>
+</footer>
+
+</html>
