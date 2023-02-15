@@ -11,12 +11,11 @@
 
 h1 {
     /*Titulo de todas las paginas (WALKMANIA)*/
-    height: 60px;
     background-color: cornsilk;
     color:crimson;
     text-align: center;
     font-family: 'Righteous', cursive;
-    font-size: 50px;
+    font-size: 4em;
 }
 
 h2 {
