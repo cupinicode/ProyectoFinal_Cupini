@@ -5,24 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!--Enlace al archivo CSS-->
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <header>
-    <h1 id="top">WALKMANIAC</h1>
+    <h1 id="top" class="display-1">WALKMANIAC</h1>
     <h2>La WEB de los fanaticos de los Walkmans</h2>
-    <nav>
+  
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img src="../assets/img/dibujo walkman.jfif" alt="Icono Walkman">
+          <a class="navbar-brand" href="../index.html"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link" href="../pages/archive.html">Archivo</a>
+              <a class="nav-link" href="../pages/gallery.html">Galeria</a>
+              <a class="nav-link" href="../pages/about-us.html">Sobre nosotros</a>
+              <a class="nav-link" href="../pages/contact.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+  
+    <!-- <nav>
         <ul>
-            <li><a href="../pages/archive.html">Archivo</a></li>
-            <li><a href="../pages/gallery.html">Galeria</a></li>
-            <li><a href="../pages/about-us.html">Sobre nosotros</a></li>
-            <li><a href="../pages/contact.html">Contacto</a></li>
-            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./pages/archive.html">Archivo</a></li>
+            <li><a href="./pages/gallery.html">Galeria</a></li>
+            <li><a href="./pages/about-us.html">Sobre nosotros</a></li>
+            <li><a href="./pages/contact.html">Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
         </ul>
-    </nav>
-</header>
-
+    </nav> -->
+  
+  </header>
+  
 <body>
     <h3>Completa el formulario</h3>
     <form>
@@ -70,12 +93,18 @@
 
 <footer>
     <h6>&copy 2023 Jorge Cupini</h6>
-    <a href="https://wa.me/541149735001/?text=Te%20contacto%20desde%20Walkmaniac" target="_blank">
+    <div class="footer-iconos">
+      <a href="https://wa.me/541149735001/?text=Te%20contacto%20desde%20Walkmaniac" target="_blank">
         <img src="../assets/img/logo-wasap.png" width="50" height="50">
-    </a>
-    <a href="http:instagram.com" target="_blank">
+      </a>
+      <a href="http:instagram.com" target="_blank">
         <img src="../assets/img/instagram.png" width="50" height="50"></a>
-    <a href="#top"><img src="../assets/img/top2.png" width="50" height="50"></a>
-</footer>
-
-</html>
+      <a href="#top"><img src="../assets/img/top2.png" width="50" height="50"></a>
+    </div>
+  </footer>
+    
+  <!-- <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+  </html>
+  

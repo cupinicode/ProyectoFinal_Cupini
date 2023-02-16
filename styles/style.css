@@ -14,12 +14,11 @@ h1 {
     background-color: cornsilk;
     color:crimson;
     text-align: center;
-    font-family: 'Righteous', cursive;
-    font-size: 4em;
+    font-family: 'Righteous', cursive;    
 }
 
 h2 {
-    /*Subtitulo de todas las paginas (La WEB de los.....)*/
+    /*Subtitulo FIJO de todas las paginas (La WEB de los.....)*/
     background-color: cornsilk;
     text-align: center;
     font-family: 'Space Grotesk', sans-serif;
@@ -30,7 +29,7 @@ h3 {
     text-align: center;
     padding: 40px;
     height: 80px;
-    font-size: 30px;
+    /* font-size: 30px; */
     font-family: 'Space Grotesk', sans-serif;
     font-style: italic;
     color: blue;
@@ -42,32 +41,31 @@ h6{
     margin-top: 60px;
     padding: 100px;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    font-size: 1.5rem;
     display: inline;
 }
 
-nav{
+/* nav{
     text-align: right;
-}
+} */
 
-li {
+li { /*Ya no se usa, lo manejo con Bootstrap*/
     display: inline-block;
 }
 
-a {
+a { /*Ya no se usa, lo manejo con Bootstrap*/
     color: crimson;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 	font-weight: 600;
     font-size: 20px;
     margin: 20px
-    /*Aquí debe ir la propiedad que lo ubica a la derecha*/
 }
 
 
 p{
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 1.5rem;
     padding: 40px;
 }
 
@@ -75,6 +73,11 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	background-color: bisque;
     margin: 20px;
+}
+
+.cuerpo{ /*Por ahora solo lo uso para centrar imagenes en el body*/
+    display: flex;
+    justify-content: center;
 }
 
 form {
@@ -89,7 +92,7 @@ form {
     text-align: center;
     color: darkblue;
     font-weight: bolder;
-    font-size: 23px;
+    font-size: 1.2rem;
 }
 
 .boton {
@@ -100,11 +103,21 @@ form {
     padding: 10px;
 }
 
-.galeria img{
-    padding: 10px;
-    display: inline-block;  
-    width: 600px; 
-    height: 600px;
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-galeria{
+    height: 300px;
+    width: 300px;
+}
+
+.card{ /*Clase de Bootstrap*/
+    margin: 5px;
+    /* height: 50; */
 }
 
 form p {
@@ -116,4 +129,61 @@ form p {
     font-family: 'Poppins', sans-serif;
 }
 
+#videos{ /*Para organizar las miniaturas de YouTube*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
+.container-links-gallery{ /*COntenedor de las CARDs*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-gallery{ /*Iconos de Fotos y Videos*/
+    display: flex;
+    width: 30%;
+    margin: auto;
+}
+
+@media screen and (max-width: 700px){
+    .galeria{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 580px){
+    #top{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .footer-iconos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .quienes_somos p{
+        font-size: 0.8rem;
+    }
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
