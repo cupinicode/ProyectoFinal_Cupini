@@ -32,6 +32,7 @@ h3 {
     /* font-size: 30px; */
     font-family: 'Space Grotesk', sans-serif;
     font-style: italic;
+    font-weight: bolder;
     color: blue;
 }
 
@@ -53,7 +54,7 @@ li { /*Ya no se usa, lo manejo con Bootstrap*/
     display: inline-block;
 }
 
-a { /*Ya no se usa, lo manejo con Bootstrap*/
+a { /*Ya no se usa para el NAV, lo manejo con Bootstrap*/
     color: crimson;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -147,16 +148,24 @@ form p {
     display: flex;
     width: 30%;
     margin: auto;
+    background-color: cornsilk;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: .5rem .5rem .2rem 0px;
 }
 
-@media screen and (max-width: 700px){
+/*@media screen and (max-width: 700px){
     .galeria{
         align-items: center;
         flex-direction: column;
     }
-}
+}*/
 
 @media screen and (max-width: 580px){
+    .galeria{
+        align-items: center;
+        flex-direction: column;
+    }
     #top{
         font-size: 2rem;
     }
