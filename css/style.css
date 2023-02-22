@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Importo Fonts de Google Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&family=Poppins:wght@500&family=Space+Grotesk&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
@@ -62,7 +63,8 @@ a { /*Ya no se usa para el NAV, lo manejo con Bootstrap*/
 p {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
-  padding: 40px;
+  margin: 2rem;
+  padding: 2rem;
 }
 
 body {
@@ -74,6 +76,15 @@ body {
 .cuerpo { /*Por ahora solo lo uso para centrar imagenes en el body*/
   display: flex;
   justify-content: center;
+}
+
+.contenedor_texto {
+  display: flex;
+  flex-direction: column;
+  border: solid rgba(226, 154, 11, 0.915);
+  margin-top: 4em;
+  margin-left: 10%; /*  La primera vez que uso "%" y funciona MUY bien con RESPONSIVE !!!!     */
+  margin-right: 10%; /*-->  Actualizar todos los tamaños, reemplazando "px" y "rem" por "%"     */
 }
 
 form { /*Formulario de Contacto*/
@@ -124,7 +135,7 @@ form p { /*Paragraph dentro del formulario de conatacto*/
   font-family: "Poppins", sans-serif;
 }
 
-.centrado, #videos { /*COntenedor de las CARDs*/
+.centrado, #videos { /*Contenedor de las CARDs*/
   display: flex;
   justify-content: center;
   align-items: center;
