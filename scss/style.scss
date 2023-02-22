@@ -1,6 +1,11 @@
-/*Importo Fonts*/
+//Comentario SASS que no se compila a CSS
+
+/*Importo Fonts de Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&family=Poppins:wght@500&family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/*Importo mi PARTIAL que contiene las fuentes*/
+@import "fonts";
 
 /*Reseteo*/
 
@@ -9,19 +14,22 @@
     padding: 0%;
 }
 
+/*Variables de SASS*/
+
+
 h1 {
     /*Titulo de todas las paginas (WALKMANIA)*/
-    background-color: cornsilk;
-    color:crimson;
+    background-color: $background_head;
+    color: $color_head;
     text-align: center;
-    font-family: 'Righteous', cursive;    
+    font-family: $font_head 
 }
 
 h2 {
     /*Subtitulo FIJO de todas las paginas (La WEB de los.....)*/
-    background-color: cornsilk;
+    background-color: $background_head;
     text-align: center;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: $font_head2;
 }
 
 h3 {
@@ -30,7 +38,7 @@ h3 {
     padding: 40px;
     height: 80px;
     /* font-size: 30px; */
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: $font_head2;
     font-style: italic;
     font-weight: bolder;
     color: blue;
@@ -38,17 +46,14 @@ h3 {
 
 h6{
     /*Solo se utiliza para los Footers*/
-    color: chocolate;
+    color: $color_footer;
     margin-top: 60px;
     padding: 100px;
-    font-family: 'Poppins', sans-serif;
+    font-family: $font_footer;
     font-size: 1.5rem;
     display: inline;
 }
 
-/* nav{
-    text-align: right;
-} */
 
 li { /*Ya no se usa, lo manejo con Bootstrap*/
     display: inline-block;
@@ -65,14 +70,14 @@ a { /*Ya no se usa para el NAV, lo manejo con Bootstrap*/
 
 
 p{
-    font-family: 'Poppins', sans-serif;
+    font-family: $font_p;
     font-size: 1.5rem;
     padding: 40px;
 }
 
 body {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	background-color: bisque;
+	font-family: $font_body;
+	background-color: $background_body;
     margin: 20px;
 }
 
@@ -81,12 +86,16 @@ body {
     justify-content: center;
 }
 
-form {
-    font-family: 'Poppins', sans-serif;
+form { /*Formulario de Contacto*/
+    font-family: $font_form;
     font-size: 22px;
-    background-color: bisque;
+    background-color: $background_form;
     padding: 20px;
     text-align: center;
+    p { /*Paragraph dentro del formulario de conatacto*/
+     color: $color_form_p;
+    }
+    
 }
 
 .quienes_somos p{
@@ -96,11 +105,11 @@ form {
     font-size: 1.2rem;
 }
 
-.boton {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    color: blue;
-    background-color:aquamarine;
+.boton { /*Botones del Formulario de Contacto*/
+    font-family: $font_boton;
+    font-size: 22px;
+    color: $color_boton;
+    background-color: $background_boton;
     padding: 10px;
 }
 
@@ -121,34 +130,28 @@ form {
     /* height: 50; */
 }
 
-form p {
-    color: rgb(33, 8, 110);
-}
-
 .selector  {
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+    font-family: $font_selector;
+}
+
+.centrado { /*COntenedor de las CARDs*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #videos{ /*Para organizar las miniaturas de YouTube*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend .centrado;
     flex-wrap: wrap;
     gap: 10px;
-}
-
-.container-links-gallery{ /*COntenedor de las CARDs*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .links-gallery{ /*Iconos de Fotos y Videos*/
     display: flex;
     width: 30%;
     margin: auto;
-    background-color: cornsilk;
+    background-color: $background_body;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: .5rem .5rem .2rem 0px;

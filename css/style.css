@@ -1,0 +1,189 @@
+/*Importo Fonts de Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&family=Poppins:wght@500&family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+/*Importo mi PARTIAL que contiene las fuentes*/
+/*Reseteo*/
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/*Variables de SASS*/
+h1 {
+  /*Titulo de todas las paginas (WALKMANIA)*/
+  background-color: cornsilk;
+  color: crimson;
+  text-align: center;
+  font-family: "Righteous", cursive;
+}
+
+h2 {
+  /*Subtitulo FIJO de todas las paginas (La WEB de los.....)*/
+  background-color: cornsilk;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h3 {
+  /*Titulo de cada pagina del sitio*/
+  text-align: center;
+  padding: 40px;
+  height: 80px;
+  /* font-size: 30px; */
+  font-family: "Space Grotesk", sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  color: blue;
+}
+
+h6 {
+  /*Solo se utiliza para los Footers*/
+  color: chocolate;
+  margin-top: 60px;
+  padding: 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  display: inline;
+}
+
+li { /*Ya no se usa, lo manejo con Bootstrap*/
+  display: inline-block;
+}
+
+a { /*Ya no se usa para el NAV, lo manejo con Bootstrap*/
+  color: crimson;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 20px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  padding: 40px;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: bisque;
+  margin: 20px;
+}
+
+.cuerpo { /*Por ahora solo lo uso para centrar imagenes en el body*/
+  display: flex;
+  justify-content: center;
+}
+
+form { /*Formulario de Contacto*/
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  background-color: bisque;
+  padding: 20px;
+  text-align: center;
+}
+form p { /*Paragraph dentro del formulario de conatacto*/
+  color: rgb(33, 8, 110);
+}
+
+.quienes_somos p {
+  text-align: center;
+  color: darkblue;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.boton { /*Botones del Formulario de Contacto*/
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  color: blue;
+  background-color: aquamarine;
+  padding: 10px;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.img-galeria {
+  height: 300px;
+  width: 300px;
+}
+
+.card { /*Clase de Bootstrap*/
+  margin: 5px;
+  /* height: 50; */
+}
+
+.selector {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.centrado, #videos { /*COntenedor de las CARDs*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#videos { /*Para organizar las miniaturas de YouTube*/
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.links-gallery { /*Iconos de Fotos y Videos*/
+  display: flex;
+  width: 30%;
+  margin: auto;
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.2rem 0px;
+}
+
+/*@media screen and (max-width: 700px){
+    .galeria{
+        align-items: center;
+        flex-direction: column;
+    }
+}*/
+@media screen and (max-width: 580px) {
+  .galeria {
+    align-items: center;
+    flex-direction: column;
+  }
+  #top {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .footer-iconos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .quienes_somos p {
+    font-size: 0.8rem;
+  }
+}
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
