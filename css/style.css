@@ -120,11 +120,6 @@ form p { /*Paragraph dentro del formulario de conatacto*/
   justify-content: center;
 }
 
-.img-galeria {
-  height: 300px;
-  width: 300px;
-}
-
 .card { /*Clase de Bootstrap*/
   margin: 5px;
   /* height: 50; */
@@ -146,14 +141,42 @@ form p { /*Paragraph dentro del formulario de conatacto*/
   gap: 10px;
 }
 
-.links-gallery { /*Iconos de Fotos y Videos*/
+.container_links_galeria {
   display: flex;
-  width: 30%;
+  width: 60%;
   margin: auto;
-  background-color: bisque;
+  background-color: cornsilk;
   padding: 1rem;
+  border: 1px solid black;
   border-radius: 1rem;
-  box-shadow: 0.5rem 0.5rem 0.2rem 0px;
+  box-shadow: 0.5rem 0.5rem 1rem 0px;
+}
+.container_links_galeria .links-gallery { /*Iconos de Fotos y Videos*/
+  display: flex;
+  width: 50%;
+  margin: auto;
+  padding: 1rem;
+  background-color: bisque;
+  border: 1px solid black;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0px gray;
+}
+.container_links_galeria .links-gallery:hover {
+  box-shadow: none;
+  transform: translate(5px, 5px);
+}
+
+#navbarNavAltMarkup { /*Redefino la CLASE y el ID de BOOTSTRAP*/
+  justify-content: right;
+}
+#navbarNavAltMarkup .navbar-nav {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+}
+#navbarNavAltMarkup .navbar-nav .nav-link:hover {
+  border: 2px solid black;
+  border-radius: 1rem;
+  background-color: lavender;
 }
 
 /*@media screen and (max-width: 700px){
@@ -162,7 +185,7 @@ form p { /*Paragraph dentro del formulario de conatacto*/
         flex-direction: column;
     }
 }*/
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 560px) {
   .galeria {
     align-items: center;
     flex-direction: column;

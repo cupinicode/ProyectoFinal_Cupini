@@ -130,11 +130,6 @@ form { /*Formulario de Contacto*/
     justify-content: center;
 }
 
-.img-galeria{
-    height: 300px;
-    width: 300px;
-}
-
 .card{ /*Clase de Bootstrap*/
     margin: 5px;
     /* height: 50; */
@@ -157,14 +152,44 @@ form { /*Formulario de Contacto*/
     gap: 10px;
 }
 
-.links-gallery{ /*Iconos de Fotos y Videos*/
+.container_links_galeria{
     display: flex;
-    width: 30%;
+    width: 60%;
     margin: auto;
-    background-color: $background_body;
+    background-color: $background_head;
     padding: 1rem;
+    border: 1px solid black;
     border-radius: 1rem;
-    box-shadow: .5rem .5rem .2rem 0px;
+    box-shadow: .5rem .5rem 1rem 0px;
+    .links-gallery{ /*Iconos de Fotos y Videos*/
+        display: flex;
+        width: 50%;
+        margin: auto;
+        padding: 1rem;
+        background-color: $background_body;
+        border: 1px solid black;
+        border-radius: 1rem;
+        box-shadow: .5rem .5rem .5rem 0px gray;
+        &:hover { //Aplico HOVER a "&" (clase .links-gallery)
+            box-shadow: none;
+            transform: translate(5px,5px);
+        }
+    }
+    }
+
+
+
+#navbarNavAltMarkup{ /*Redefino la CLASE y el ID de BOOTSTRAP*/
+    justify-content: right;
+    .navbar-nav{ 
+        font-family: $font_navbar;
+        font-size: $size_navbar;
+        .nav-link:hover{
+            border: 2px solid black;
+            border-radius: 1rem;
+            background-color: lavender;
+        }
+    }
 }
 
 /*@media screen and (max-width: 700px){
@@ -174,7 +199,7 @@ form { /*Formulario de Contacto*/
     }
 }*/
 
-@media screen and (max-width: 580px){
+@media screen and (max-width: 560px){
     .galeria{
         align-items: center;
         flex-direction: column;
