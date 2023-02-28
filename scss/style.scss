@@ -35,7 +35,7 @@ h2 {
 h3 {
     /*Titulo de cada pagina del sitio*/
     text-align: center;
-    padding: 40px;
+    padding: 5%;
     height: 80px;
     /* font-size: 30px; */
     font-family: $font_head2;
@@ -131,9 +131,13 @@ form { /*Formulario de Contacto*/
 }
 
 .card{ /*Clase de Bootstrap*/
-    margin: 5px;
+    margin: 25px;
     /* height: 50; */
-}
+    border-radius: 25px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 15px black;
+    padding: 20px;
+    }
 
 .selector  {
     font-size: 18px;
