@@ -38,6 +38,13 @@ h3 {
 }
 
 h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 100%;
+  text-align: center;
+}
+
+h6 {
   /*Solo se utiliza para los Footers*/
   color: chocolate;
   font-family: "Poppins", sans-serif;
@@ -111,7 +118,7 @@ form label {
 }
 
 .boton { /*Botones del Formulario de Contacto*/
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 100%;
   color: blue;
   background-color: aquamarine;
@@ -132,7 +139,7 @@ form label {
   justify-content: center;
 }
 
-.card { /*Clase de Bootstrap*/
+.card { /*Clase de Bootstrap, cambio algunos valores*/
   margin: 25px;
   /* height: 50; */
   border-radius: 25px;
@@ -140,6 +147,10 @@ form label {
   border: 2px solid black;
   box-shadow: 0px 0px 15px black;
   padding: 20px;
+}
+
+.card-title { /*Clase de Bootstrap, cambio algunos valores*/
+  color: red;
 }
 
 .selector {

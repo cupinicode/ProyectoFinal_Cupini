@@ -47,12 +47,20 @@ h3 {
 }
 
 h4{
+    font-family: $font_card_tittle;
+    font-weight: bolder;
+    font-size: 100%;
+    text-align: center;
+}
+
+h6{
     /*Solo se utiliza para los Footers*/
     color: $color_footer;
     font-family: $font_footer;
     font-size: 150%;
     padding-top: 50px;
 }
+
 
 
 li { /*Ya no se usa, lo manejo con Bootstrap*/
@@ -143,7 +151,7 @@ form { /*Formulario de Contacto*/
     justify-content: center;
 }
 
-.card{ /*Clase de Bootstrap*/
+.card{ /*Clase de Bootstrap, cambio algunos valores*/
     margin: 25px;
     /* height: 50; */
     border-radius: 25px;
@@ -151,7 +159,11 @@ form { /*Formulario de Contacto*/
     border: 2px solid black;
     box-shadow: 0px 0px 15px black;
     padding: 20px;
-    }
+}
+
+.card-title{ /*Clase de Bootstrap, cambio algunos valores*/
+    color: $color_card_title;
+}
 
 .selector  {
     font-size: 18px;
