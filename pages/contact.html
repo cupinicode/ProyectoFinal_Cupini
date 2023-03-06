@@ -37,62 +37,79 @@
   </header>
   
 <body>
-    <h3>Completa el formulario</h3>
+  <h3>Completa el formulario</h3>
+  <div class="contenedor_texto">
     <form>
-        <p>Ingresa tu nombre y apellido</p>
+      <p>Ingresa tu nombre y apellido</p>
+      <div>
         <label for="nombre">Nombre</label>
-        <input type="text" id="nombre">
+        <input type="text" id="nombre" placeholder="aquí tu nombre(s)">
+      </div>
+      <div>
         <label for="apellido">Apellido</label>
-        <input type="text" id="apellido">
+        <input type="text" id="apellido" placeholder="aquí tu apellido(s)">
+      </div>
 
-        <p>Ingresa tu correo electrónico</p>
-        <label for="email">Email</label>
-        <input type="email" id="email">
 
-        <p>Ingresa tu telefono</p>
+      <p>Ingresa tu correo electrónico</p>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="aquí tu email">
+
+      <p>Ingresa tu telefono</p>
+      <div>
         <label for="celular">Celular</label>
         <input type="radio" name="contacto" id="celular">
 
         <label for="fijo">Telefono Fijo</label>
         <input type="radio" name="contacto" id="fijo">
+      </div>
 
-        <label for="numero">Número</label>
-        <input type="tel" id="numero">
+      <label for="numero">Número</label>
+      <input type="tel" id="numero" placeholder="aquí tu teléfono">
 
-        <p>Como nos conociste ?</p>
-        <select class="selector" name="como_conociste">
-            <option value="W">En la web</option>
-            <option value="G">En medios graficos</option>
-            <option value="T">En la TV o Radio</option>
-            <option value="R">En redes sociales</option>
-        </select>
+      <p>Como nos conociste ?</p>
+      <select class="selector" name="como_conociste">
+        <option value="R">En redes sociales</option>
+        <option value="W">En la web</option>
+        <option value="G">En medios graficos</option>
+        <option value="T">En la TV o Radio</option>
+      </select>
 
-        <p>Dejanos tu consulta o comentario</p>
-        <div>
-            <textarea name="" id="" cols="60" rows="10" placeholder="comentarios"></textarea>
-        </div>    
+      <p>Dejanos tu consulta o comentario</p>
+      <div>
+          <textarea name="" id="" cols="35" rows="6" placeholder="comentarios"></textarea>
+      </div> 
 
-        <input class="boton" type="submit" value="ENVIAR"><input class="boton" type="reset" value="CANCELAR">
+      <div>
+        <input type="checkbox" id="recibir">
+        <label for="recibir">Quiero recibir información</label>
+      </div>
 
+      <div>
+        <label for="">periódica vía mail</label>
+      </div>
+
+      <input class="boton" type="submit" value="ENVIAR">
+      <input class="boton" type="reset" value="CANCELAR">
     </form>
+  </div>
+
+  <div class="contenedor_texto">
     <p>Donde estamos</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.409409668164!2d-58.49125758423636!3d-34.61909286581988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9c325d888df%3A0xd0c3ca3f9a4e9f96!2sComuna%2011%2C%20Alejandro%20Magari%C3%B1os%20Cervantes%203754%2C%20C1407FDJ%20CABA!5e0!3m2!1ses-419!2sar!4v1673497884398!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13134.264408937897!2d-58.5249405!3d-34.6151319!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d958a92c6b%3A0xe512735592db9f6d!2sMcDonald&#39;s!5e0!3m2!1ses!2sar!4v1678067774287!5m2!1ses!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="img-fluid card"></iframe>
+  </div>
 </body>
 
 <footer>
-    <h6>&copy 2023 Jorge Cupini</h6>
-    <div class="footer-iconos">
-      <a href="https://wa.me/541149735001/?text=Te%20contacto%20desde%20Walkmaniac" target="_blank">
-        <img src="../assets/img/logo-wasap.png" width="50" height="50">
-      </a>
-      <a href="http:instagram.com" target="_blank">
-        <img src="../assets/img/instagram.png" width="50" height="50"></a>
-      <a href="#top"><img src="../assets/img/top2.png" width="50" height="50"></a>
-    </div>
-  </footer>
+  <div> 
+    <a href="https://wa.me/541149735001/?text=Te%20contacto%20desde%20Walkmaniac" target="_blank">
+      <img src="../assets/img/logo-wasap.png" width="50" height="50">
+    </a>
+    <a href="http:instagram.com" target="_blank">
+      <img src="../assets/img/instagram.png" width="50" height="50"></a>
+    <a href="#top"><img src="../assets/img/top2.png" width="50" height="50"></a>
+  </div>
+  <h4>&copy 2023 Jorge Cupini</h4>
+</footer>
     
-  <!-- <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  
-  </html>
-  
+</html>

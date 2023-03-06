@@ -3,7 +3,8 @@
 /*Importo Fonts de Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&family=Poppins:wght@500&family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 /*Importo mi PARTIAL que contiene las fuentes*/
 @import "fonts";
 
@@ -22,7 +23,7 @@ h1 {
     background-color: $background_head;
     color: $color_head;
     text-align: center;
-    font-family: $font_head 
+    font-family: $font_head;
 }
 
 h2 {
@@ -30,28 +31,27 @@ h2 {
     background-color: $background_head;
     text-align: center;
     font-family: $font_head2;
+    font-size: 180%;
 }
 
 h3 {
     /*Titulo de cada pagina del sitio*/
     text-align: center;
     padding: 5%;
-    height: 80px;
+    //height: 80px;
     /* font-size: 30px; */
-    font-family: $font_head2;
-    font-style: italic;
+    font-family: $font_head3;
+    //font-style: italic;
     font-weight: bolder;
-    color: blue;
+    color: $color_head3;
 }
 
-h6{
+h4{
     /*Solo se utiliza para los Footers*/
     color: $color_footer;
-    margin-top: 60px;
-    padding: 100px;
     font-family: $font_footer;
-    font-size: 1.5rem;
-    display: inline;
+    font-size: 150%;
+    padding-top: 50px;
 }
 
 
@@ -90,22 +90,28 @@ body {
 .contenedor_texto {
     display: flex;
     flex-direction: column;
+    align-items: center;
     border: solid rgba(226, 154, 11, 0.915);
+    background-color: $background_text_box;
     margin-top: 4em;
-    margin-left: 10%; /*  La primera vez que uso "%" y funciona MUY bien con RESPONSIVE !!!!     */
-    margin-right: 10%;/*-->  Actualizar todos los tamaños, reemplazando "px" y "rem" por "%"     */
+    margin-left: 10%; /*   "%" funciona MUY bien con RESPONSIVE !!!!     */
+    margin-right: 10%;
+    padding: 20px;
 }
 
 form { /*Formulario de Contacto*/
     font-family: $font_form;
-    font-size: 22px;
-    background-color: $background_form;
+    font-size: 1.4rem;
     padding: 20px;
     text-align: center;
-    p { /*Paragraph dentro del formulario de conatacto*/
+    p{ /*Paragraph dentro del formulario de conatacto*/
      color: $color_form_p;
+     font-size: 1.8rem;
+     font-weight: bolder;
     }
-    
+    label{
+        padding: 10px;
+    }
 }
 
 .quienes_somos p{
@@ -117,10 +123,17 @@ form { /*Formulario de Contacto*/
 
 .boton { /*Botones del Formulario de Contacto*/
     font-family: $font_boton;
-    font-size: 22px;
+    font-size: $size_boton;
     color: $color_boton;
     background-color: $background_boton;
     padding: 10px;
+    margin: 2rem;
+    border-radius: 20%;
+    box-shadow: 0px 0px 15px black;
+    &:hover { //Aplico HOVER a "&" (clase .boton)
+        box-shadow: none;
+        transform: translate(5px,5px);
+    }
 }
 
 .galeria{
@@ -151,10 +164,15 @@ form { /*Formulario de Contacto*/
     align-items: center;
 }
 
-#videos{ /*Para organizar las miniaturas de YouTube*/
+.caja_videos{ /*Para organizar las miniaturas de YouTube*/
     @extend .centrado;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
+    background-color: $background_head;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 20px;
 }
 
 .container_links_galeria{
@@ -204,38 +222,37 @@ form { /*Formulario de Contacto*/
     }
 }*/
 
-@media screen and (max-width: 560px){
+@media screen and (max-width: 620px){
     .galeria{
         align-items: center;
         flex-direction: column;
     }
+    
     #top{
         font-size: 2rem;
     }
+    
     h2{
-        font-size: 1.5rem;
+        font-size: 120%;
     }
-    h3{
-        font-size: 1rem;
-    }
-    h6{
-        font-size: 1rem;
-    }
+
     p{
         font-size: 1rem;
     }
-    .footer-iconos{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+    
     .quienes_somos p{
         font-size: 0.8rem;
     }
+
+    form{
+        font-size: 1rem;
+        p{  // Párrafo dentro del formulario 
+            font-size: 1.3rem;
+        }
+    }
 }
 
-footer {
-    margin-top: 50px;
+footer{
+    margin-top: 100px;
     text-align: center;
 }

@@ -1,36 +1,42 @@
 //Archivo SASS que almacena todo lo referido a FUENTES
 
-//HEAD
+//HEAD   Estilo de fuente del título "WALKMANIAC"
 $font_head: 'Righteous', cursive;
 $color_head: crimson;
 $background_head: cornsilk;
 
-//HEAD2
-$font_head2: 'Space Grotesk', sans-serif;
+//HEAD2  Estilo de fuente del subtítulo "La web de los fanáticos de los Walkmans"
+$font_head2: 'Raleway', sans-serif; 
+$color_head2: blue;
 
-//NAVBAR
+//HEAD3  Estilo de fuente del título de cada página
+$font_head3: 'Space Grotesk', sans-serif;
+$color_head3: blue;
+
+//NAVBAR  Estilo de fuente de la barra de navegación
 $font_navbar: 'Poppins', sans-serif; // MODIFICAR !!!!!!
-$size_navbar: 1.1rem;  //Tamaño DESKTOP
+$size_navbar: 110%;  //Tamaño DESKTOP
 
-//FOOTER
+//FOOTER  Estilo de fuente del footer
 $font_footer: 'Poppins', sans-serif;
 $color_footer: chocolate;
 
-//P
-$font_p: 'Poppins', sans-serif; // MODIFICAR !!!!!!
+//P  Estilo de fuente de los párrafos
+$font_p: 'Open Sans', sans-serif; 
 
-//BODY
-$font_body: Verdana, Geneva, Tahoma, sans-serif;
+//BODY  Estilo de fuente de las etiquetass BODY
+$font_body: 'Raleway', sans-serif;//Verdana, Geneva, Tahoma, sans-serif;
 $background_body:  bisque;
+$background_text_box:  cornsilk;
 
-//FORM
+//FORM  Estilo de fuente del formulario
 $font_form: 'Poppins', sans-serif; // MODIFICAR !!!
-$background_form:  bisque;
 $color_form_p: rgb(33, 8, 110);
 
-//BOTONES
+//BOTONES  Estilo de fuente de los botones del Formulario
 $font_boton: 'Poppins', sans-serif; //MODIFICAR !!!
 $color_boton:  blue;
+$size_boton: 100%;
 $background_boton: aquamarine;
 
 //SELECTOR
