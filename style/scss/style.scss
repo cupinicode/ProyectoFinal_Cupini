@@ -19,17 +19,17 @@
 
 h1 {
   /*Titulo de todas las paginas (WALKMANIA)*/
-  background-color: $background_head;
-  color: $color_head;
-  text-align: center;
   font-family: $font_head;
+  background-color: map-get($map: $head, $key: background ); /* Accedo al mapa HEAD*/
+  color: map-get($map: $head, $key: color);// 
+  text-align: center;
 }
 
-h2 {
+h2 { 
   /*Subtitulo FIJO de todas las paginas (La WEB de los.....)*/
-  background-image: radial-gradient(($background_head, rgb(240, 240, 152))); /*Gradiente muy suave*/
+  background-image: radial-gradient((map-get($map: $head, $key: background ), rgb(240, 240, 152))); /*Gradiente muy suave*/
   text-align: center;
-  font-family: $font_head2;
+  font-family: $font_head2; 
   font-size: 180%;
 }
 
@@ -58,8 +58,6 @@ h6{
   padding-top: 50px;
 }
 
-
-
 li { /*Ya no se usa, lo manejo con Bootstrap*/
   display: inline-block;
 }
@@ -73,7 +71,6 @@ a { /*Ya no se usa para el NAV, lo manejo con Bootstrap*/
   margin: 20px
 }
 
-
 p{
   font-family: $font_p;
   font-size: 1.5rem;
@@ -83,7 +80,7 @@ p{
 
 body {
 	font-family: $font_body;
-	background-color: $background_body;
+	background-color: map-get($map: $body, $key: background);
   margin: 20px;
 }
 
@@ -97,7 +94,7 @@ body {
   flex-direction: column;
   align-items: center;
   border: solid rgba(226, 154, 11, 0.915);
-  background-color: $background_text_box;
+  background-color: map-get($map: $body, $key: background_box);
   margin-top: 4em;
   margin-left: 10%; /*   "%" funciona MUY bien con RESPONSIVE !!!!     */
   margin-right: 10%;
@@ -109,7 +106,7 @@ form { /*Formulario de Contacto*/
   font-size: 1.4rem;
   padding: 20px;
   text-align: center;
-  p{ /*Paragraph dentro del formulario de conatacto*/
+  p{         /*Paragraph dentro del formulario de conatacto*/
     color: $color_form_p;
     font-size: 1.8rem;
     font-weight: bolder;
@@ -128,9 +125,9 @@ form { /*Formulario de Contacto*/
 
 .boton { /*Botones del Formulario de Contacto*/
   font-family: $font_boton;
-  font-size: $size_boton;
-  color: $color_boton;
-  background-color: $background_boton;
+  font-size: map-get($map: $boton, $key: size);  /*Accedo al mapa BOTON*/
+  color: map-get($map: $boton, $key: color);
+  background-color: map-get($map: $boton, $key: background);
   padding: 10px;
   margin: 2rem;
   border-radius: 1rem;
@@ -176,7 +173,7 @@ form { /*Formulario de Contacto*/
   @extend .centrado;
   flex-wrap: wrap;
   gap: 20px;
-  background-color: $background_head;
+  background-color: map-get($map: $head, $key: background);  /*Accedo al mapa HEAD*/
   padding: 1rem;
   border: 1px solid black;
   border-radius: 1rem;
@@ -190,14 +187,14 @@ form { /*Formulario de Contacto*/
   padding: 1rem;
   border: 1px solid black;
   border-radius: 1rem;
-  background-image: linear-gradient(to left,$background_head, rgb(245, 245, 131)); /*Gradiente de los íconos*/
+  background-image: linear-gradient(to left,map-get($map: $head, $key: background), rgb(245, 245, 131)); /*Gradiente de los íconos*/
   box-shadow: .5rem .5rem 1rem 0px;
   .links-gallery{ /*Iconos de Fotos y Videos*/
     display: flex;
     width: 50%;
     margin: auto;
     padding: 1rem;
-    background-color: $background_body;
+    background-color: map-get($map: $body, $key: background); /*Accedo al mapa BODY*/
     border: 1px solid black;
     border-radius: 1rem;
     box-shadow: .5rem .5rem .5rem 0px gray;
@@ -207,8 +204,6 @@ form { /*Formulario de Contacto*/
     }
   }
 }
-
-
 
 #navbarNavAltMarkup{ /*Redefino la CLASE y el ID de BOOTSTRAP*/
   justify-content: right;
@@ -257,4 +252,3 @@ footer{
     }
   }
 }
-

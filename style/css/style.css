@@ -5,6 +5,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 /*Importo mi PARTIAL que contiene las fuentes*/
+/*Archivo SASS que almacena todo lo referido a FUENTES y sus COLORES*/
+/*Defino 3 mapas*/
+/*En un MAP, no puedo incluir una fuente como valor, ya que contiene COMAS, que es el separador de claves*/
 /*Reseteo*/
 * {
   margin: 0%;
@@ -14,10 +17,10 @@
 /*Variables de SASS*/
 h1 {
   /*Titulo de todas las paginas (WALKMANIA)*/
-  background-color: cornsilk;
+  font-family: "Righteous", cursive;
+  background-color: cornsilk; /* Accedo al mapa HEAD*/
   color: crimson;
   text-align: center;
-  font-family: "Righteous", cursive;
 }
 
 h2 {
@@ -120,7 +123,7 @@ form label {
 
 .boton { /*Botones del Formulario de Contacto*/
   font-family: "Raleway", sans-serif;
-  font-size: 100%;
+  font-size: 100%; /*Accedo al mapa BOTON*/
   color: darkblue;
   background-color: khaki;
   padding: 10px;
@@ -167,7 +170,7 @@ form label {
 .caja_videos { /*Para organizar las miniaturas de YouTube*/
   flex-wrap: wrap;
   gap: 20px;
-  background-color: cornsilk;
+  background-color: cornsilk; /*Accedo al mapa HEAD*/
   padding: 1rem;
   border: 1px solid black;
   border-radius: 1rem;
@@ -189,7 +192,7 @@ form label {
   width: 50%;
   margin: auto;
   padding: 1rem;
-  background-color: bisque;
+  background-color: bisque; /*Accedo al mapa BODY*/
   border: 1px solid black;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 0.5rem 0px gray;
