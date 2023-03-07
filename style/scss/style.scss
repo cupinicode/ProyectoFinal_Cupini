@@ -5,11 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
 /*Importo mi PARTIAL que contiene las fuentes*/
 @import "fonts";
 
 /*Reseteo*/
-
 * {
     margin: 0%;
     padding: 0%;
@@ -17,254 +17,244 @@
 
 /*Variables de SASS*/
 
-
 h1 {
-    /*Titulo de todas las paginas (WALKMANIA)*/
-    background-color: $background_head;
-    color: $color_head;
-    text-align: center;
-    font-family: $font_head;
+  /*Titulo de todas las paginas (WALKMANIA)*/
+  background-color: $background_head;
+  color: $color_head;
+  text-align: center;
+  font-family: $font_head;
 }
 
 h2 {
-    /*Subtitulo FIJO de todas las paginas (La WEB de los.....)*/
-    background-color: $background_head;
-    text-align: center;
-    font-family: $font_head2;
-    font-size: 180%;
+  /*Subtitulo FIJO de todas las paginas (La WEB de los.....)*/
+  background-image: radial-gradient(($background_head, rgb(240, 240, 152))); /*Gradiente muy suave*/
+  text-align: center;
+  font-family: $font_head2;
+  font-size: 180%;
 }
 
 h3 {
-    /*Titulo de cada pagina del sitio*/
-    text-align: center;
-    padding: 5%;
-    //height: 80px;
-    /* font-size: 30px; */
-    font-family: $font_head3;
-    //font-style: italic;
-    font-weight: bolder;
-    color: $color_head3;
+  /*Titulo de cada pagina del sitio*/
+  text-align: center;
+  padding: 5%;
+  font-family: $font_head3;
+  font-weight: bolder;
+  color: $color_head3;
 }
 
 h4{
-    font-family: $font_card_tittle;
-    font-weight: bolder;
-    font-size: 100%;
-    text-align: center;
+  /*Titulo de las cards*/
+  font-family: $font_card_tittle;
+  font-weight: bolder;
+  font-size: 100%;
+  text-align: center;
 }
 
 h6{
-    /*Solo se utiliza para los Footers*/
-    color: $color_footer;
-    font-family: $font_footer;
-    font-size: 150%;
-    padding-top: 50px;
+  /*Solo se utiliza para los Footers*/
+  color: $color_footer;
+  font-family: $font_footer;
+  font-size: 150%;
+  padding-top: 50px;
 }
 
 
 
 li { /*Ya no se usa, lo manejo con Bootstrap*/
-    display: inline-block;
+  display: inline-block;
 }
 
 a { /*Ya no se usa para el NAV, lo manejo con Bootstrap*/
-    color: crimson;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-	font-weight: 600;
-    font-size: 20px;
-    margin: 20px
+  color: crimson;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 20px
 }
 
 
 p{
-    font-family: $font_p;
-    font-size: 1.5rem;
-    margin: 2rem;
-    padding: 2rem;
+  font-family: $font_p;
+  font-size: 1.5rem;
+  margin: 2rem;
+  padding: 2rem;
 }
 
 body {
 	font-family: $font_body;
 	background-color: $background_body;
-    margin: 20px;
+  margin: 20px;
 }
 
 .cuerpo{ /*Por ahora solo lo uso para centrar imagenes en el body*/
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .contenedor_texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid rgba(226, 154, 11, 0.915);
-    background-color: $background_text_box;
-    margin-top: 4em;
-    margin-left: 10%; /*   "%" funciona MUY bien con RESPONSIVE !!!!     */
-    margin-right: 10%;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid rgba(226, 154, 11, 0.915);
+  background-color: $background_text_box;
+  margin-top: 4em;
+  margin-left: 10%; /*   "%" funciona MUY bien con RESPONSIVE !!!!     */
+  margin-right: 10%;
+  padding: 20px;
 }
 
 form { /*Formulario de Contacto*/
-    font-family: $font_form;
-    font-size: 1.4rem;
-    padding: 20px;
-    text-align: center;
-    p{ /*Paragraph dentro del formulario de conatacto*/
-     color: $color_form_p;
-     font-size: 1.8rem;
-     font-weight: bolder;
-    }
-    label{
-        padding: 10px;
-    }
+  font-family: $font_form;
+  font-size: 1.4rem;
+  padding: 20px;
+  text-align: center;
+  p{ /*Paragraph dentro del formulario de conatacto*/
+    color: $color_form_p;
+    font-size: 1.8rem;
+    font-weight: bolder;
+  }
+  label{
+    padding: 10px;
+  }
 }
 
 .quienes_somos p{
-    text-align: center;
-    color: darkblue;
-    font-weight: bolder;
-    font-size: 1.2rem;
+  text-align: center;
+  color: darkblue;
+  font-weight: bolder;
+  font-size: 1.2rem;
 }
 
 .boton { /*Botones del Formulario de Contacto*/
-    font-family: $font_boton;
-    font-size: $size_boton;
-    color: $color_boton;
-    background-color: $background_boton;
-    padding: 10px;
-    margin: 2rem;
-    border-radius: 20%;
-    box-shadow: 0px 0px 15px black;
-    &:hover { //Aplico HOVER a "&" (clase .boton)
-        box-shadow: none;
-        transform: translate(5px,5px);
-    }
+  font-family: $font_boton;
+  font-size: $size_boton;
+  color: $color_boton;
+  background-color: $background_boton;
+  padding: 10px;
+  margin: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px black;
+  &:hover { //Aplico HOVER a "&" (clase .boton)
+    box-shadow: none;
+    transform: translate(5px,5px);
+  }
 }
 
 .galeria{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .card{ /*Clase de Bootstrap, cambio algunos valores*/
-    margin: 25px;
-    /* height: 50; */
-    border-radius: 25px;
-    align-items: center; /*Propiedad que centra las ventanas de YouTube en las CARDS*/
-    border: 2px solid black;
-    box-shadow: 0px 0px 15px black;
-    padding: 20px;
+  margin: 25px;
+  border-radius: 25px;
+  align-items: center; /*Propiedad que centra las ventanas de YouTube en las CARDS*/
+  border: 2px solid black;
+  box-shadow: 0px 0px 15px black;
+  padding: 20px;
 }
 
 .card-title{ /*Clase de Bootstrap, cambio algunos valores*/
-    color: $color_card_title;
+  color: $color_card_title;
 }
 
 .selector  {
-    font-size: 18px;
-    font-family: $font_selector;
+  font-size: 18px;
+  font-family: $font_selector;
 }
 
 .centrado { /*Contenedor de las CARDs*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .caja_videos{ /*Para organizar las miniaturas de YouTube*/
-    @extend .centrado;
-    flex-wrap: wrap;
-    gap: 20px;
-    background-color: $background_head;
-    padding: 1rem;
-    border: 1px solid black;
-    border-radius: 1rem;
-    margin: 20px;
+  @extend .centrado;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: $background_head;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin: 20px;
 }
 
 .container_links_galeria{
+  display: flex;
+  width: 60%;
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-image: linear-gradient(to left,$background_head, rgb(245, 245, 131)); /*Gradiente de los íconos*/
+  box-shadow: .5rem .5rem 1rem 0px;
+  .links-gallery{ /*Iconos de Fotos y Videos*/
     display: flex;
-    width: 60%;
+    width: 50%;
     margin: auto;
-    background-color: $background_head;
     padding: 1rem;
+    background-color: $background_body;
     border: 1px solid black;
     border-radius: 1rem;
-    box-shadow: .5rem .5rem 1rem 0px;
-    .links-gallery{ /*Iconos de Fotos y Videos*/
-        display: flex;
-        width: 50%;
-        margin: auto;
-        padding: 1rem;
-        background-color: $background_body;
-        border: 1px solid black;
-        border-radius: 1rem;
-        box-shadow: .5rem .5rem .5rem 0px gray;
-        &:hover { //Aplico HOVER a "&" (clase .links-gallery)
-            box-shadow: none;
-            transform: translate(5px,5px);
-        }
+    box-shadow: .5rem .5rem .5rem 0px gray;
+    &:hover { //Aplico HOVER a "&" (clase .links-gallery)
+        box-shadow: none;
+        transform: translate(5px,5px);
     }
-    }
+  }
+}
 
 
 
 #navbarNavAltMarkup{ /*Redefino la CLASE y el ID de BOOTSTRAP*/
-    justify-content: right;
-    .navbar-nav{ 
-        font-family: $font_navbar;
-        font-size: $size_navbar;
-        .nav-link:hover{
-            border: 2px solid black;
-            border-radius: 1rem;
-            background-color: lavender;
-        }
+  justify-content: right;
+  .navbar-nav{ 
+    font-family: $font_navbar;
+    font-size: $size_navbar;
+    .nav-link:hover{
+      border: 2px solid black;
+      border-radius: 1rem;
+      background-color: khaki;
     }
-}
-
-/*@media screen and (max-width: 700px){
-    .galeria{
-        align-items: center;
-        flex-direction: column;
-    }
-}*/
-
-@media screen and (max-width: 620px){
-    .galeria{
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    #top{
-        font-size: 2rem;
-    }
-    
-    h2{
-        font-size: 120%;
-    }
-
-    p{
-        font-size: 1rem;
-    }
-    
-    .quienes_somos p{
-        font-size: 0.8rem;
-    }
-
-    form{
-        font-size: 1rem;
-        p{  // Párrafo dentro del formulario 
-            font-size: 1.3rem;
-        }
-    }
+  }
 }
 
 footer{
-    margin-top: 100px;
-    text-align: center;
+  margin-top: 100px;
+  text-align: center;
 }
+
+@media screen and (max-width: 620px){ /*Media queries para RESPONSIVE DESIGN*/
+  .galeria{
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #top{
+    font-size: 2rem;
+  }
+  
+  h2{
+    font-size: 120%;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+  
+  .quienes_somos p{
+    font-size: 0.8rem;
+  }
+
+  form{
+    font-size: 1rem;
+    p{  // Párrafo dentro del formulario 
+      font-size: 1.3rem;
+    }
+  }
+}
+
