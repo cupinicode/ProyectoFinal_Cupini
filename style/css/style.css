@@ -157,7 +157,7 @@ form label {
 }
 
 .selector {
-  font-size: 18px;
+  font-size: 1.4rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -179,8 +179,9 @@ form label {
 
 .container_links_galeria {
   display: flex;
-  width: 60%;
   margin: auto;
+  justify-content: center;
+  width: 50%;
   padding: 1rem;
   border: 1px solid black;
   border-radius: 1rem;
@@ -188,9 +189,7 @@ form label {
   box-shadow: 0.5rem 0.5rem 1rem 0px;
 }
 .container_links_galeria .links-gallery { /*Iconos de Fotos y Videos*/
-  display: flex;
-  width: 50%;
-  margin: auto;
+  width: 80%;
   padding: 1rem;
   background-color: bisque; /*Accedo al mapa BODY*/
   border: 1px solid black;
@@ -221,9 +220,16 @@ footer {
 }
 
 @media screen and (max-width: 620px) { /*Media queries para RESPONSIVE DESIGN*/
+  .container_links_galeria {
+    width: 100%;
+  }
   .galeria {
     align-items: center;
     flex-direction: column;
+  }
+  .caja_videos {
+    background-color: bisque;
+    border: none;
   }
   #top {
     font-size: 2rem;
@@ -238,10 +244,14 @@ footer {
     font-size: 0.8rem;
   }
   form {
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+  form .selector {
+    font-size: 0.8rem;
   }
   form p {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    padding: 10px;
   }
 }
 
