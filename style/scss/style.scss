@@ -18,7 +18,7 @@
 /*Variables de SASS*/
 
 h1 {
-  /*Titulo de todas las paginas (WALKMANIA)*/
+  /*Titulo de todas las paginas (WALKMANIAC)*/
   font-family: $font_head;
   background-color: map-get($map: $head, $key: background ); /* Accedo al mapa HEAD*/
   color: map-get($map: $head, $key: color);// 
@@ -208,13 +208,20 @@ form { /*Formulario de Contacto*/
 
 #navbarNavAltMarkup{ /*Redefino la CLASE y el ID de BOOTSTRAP*/
   justify-content: right;
+  background-size: contain;
+  background-image: url("../../assets/img/waveform.gif"); /*Gif animado de forma de onda*/
   .navbar-nav{ 
-    font-family: $font_navbar;
-    font-size: $size_navbar;
-    .nav-link:hover{
-      border: 2px solid black;
+    .nav-link{
+      font-family: $font_navbar;
+      font-size: $size_navbar;
+      color: deeppink; /*Color rosa, similar al gif animado*/
+      border: 2px solid white;
       border-radius: 1rem;
-      background-color: khaki;
+      background-color: rgb(52, 51, 51);
+    }
+    .nav-link:hover{
+      border-radius: 2rem; /*Cuando hago HOOVER, redondeo un poco mas el boton*/
+      background-color: white;
     }
   }
 }
@@ -248,10 +255,19 @@ footer{
 
   p{
     font-size: 1rem;
+    margin: 1rem;
+    padding: 0.2rem;
   }
   
   .quienes_somos p{
     font-size: 0.8rem;
+  }
+
+  .card{ /*Clase de Bootstrap, cambio algunos valores*/
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    padding: 5px;
   }
 
   form{
@@ -259,9 +275,13 @@ footer{
     .selector{
       font-size: 0.8rem;
     }
-    p{  // Párrafo dentro del formulario 
+    p{  /* Párrafo dentro del formulario */
       font-size: 1rem;
       padding: 10px;
+      margin: 10px;
+    }
+    textarea{ /*Area de comentarios, dentro del formulario*/
+      font-size: 0.6rem;
     }
   }
 }
