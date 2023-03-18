@@ -30,6 +30,7 @@ h2 {
   background-image: radial-gradient((map-get($map: $head, $key: background ), rgb(240, 240, 152))); /*Gradiente muy suave*/
   text-align: center;
   font-family: $font_head2; 
+  color: $color_head2;
   font-size: 180%;
 }
 
@@ -206,21 +207,27 @@ form { /*Formulario de Contacto*/
   }
 }
 
+.navbar{
+  --bs-navbar-toggler-border-color: red ;
+}
+
 #navbarNavAltMarkup{ /*Redefino la CLASE y el ID de BOOTSTRAP*/
   justify-content: right;
   background-size: contain;
+  background-image: url("../../assets/img/waveform.gif");
   .navbar-nav{ 
     .nav-link{
       font-family: $font_navbar;
       font-size: $size_navbar;
-      border: 2px solid black;
+      color: yellow;
+      border: 2px solid deeppink;
       border-radius: 1rem;
-      background-color: khaki;
+      background-color: rgba(16, 15, 16, 0.383);
     }
     .nav-link:hover{
       border-radius: 2rem; /*Cuando hago HOOVER, redondeo un poco mas el boton*/
-      color: white;
-      background-color: black;
+      color: black;
+      background-color: beige;
       border: 2px solid red;
     }
   }
