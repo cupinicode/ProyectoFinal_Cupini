@@ -209,19 +209,19 @@ form { /*Formulario de Contacto*/
 #navbarNavAltMarkup{ /*Redefino la CLASE y el ID de BOOTSTRAP*/
   justify-content: right;
   background-size: contain;
-  background-image: url("../../assets/img/waveform.gif"); /*Gif animado de forma de onda*/
   .navbar-nav{ 
     .nav-link{
       font-family: $font_navbar;
       font-size: $size_navbar;
-      color: deeppink; /*Color rosa, similar al gif animado*/
-      border: 2px solid white;
+      border: 2px solid black;
       border-radius: 1rem;
-      background-color: rgb(52, 51, 51);
+      background-color: khaki;
     }
     .nav-link:hover{
       border-radius: 2rem; /*Cuando hago HOOVER, redondeo un poco mas el boton*/
-      background-color: white;
+      color: white;
+      background-color: black;
+      border: 2px solid red;
     }
   }
 }
@@ -232,6 +232,7 @@ footer{
 }
 
 @media screen and (max-width: 620px){ /*Media queries para RESPONSIVE DESIGN*/
+ 
   .container_links_galeria{
     width: 100%;
   }
