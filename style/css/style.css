@@ -209,7 +209,9 @@ form label {
 #navbarNavAltMarkup { /*Redefino la CLASE y el ID de BOOTSTRAP*/
   justify-content: right;
   background-size: contain;
+  background-color: black;
   background-image: url("../../assets/img/waveform.gif");
+  background-repeat: repeat-x;
 }
 #navbarNavAltMarkup .navbar-nav .nav-link {
   font-family: "Poppins", sans-serif;

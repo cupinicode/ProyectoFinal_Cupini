@@ -214,7 +214,9 @@ form { /*Formulario de Contacto*/
 #navbarNavAltMarkup{ /*Redefino la CLASE y el ID de BOOTSTRAP*/
   justify-content: right;
   background-size: contain;
+  background-color: black;
   background-image: url("../../assets/img/waveform.gif");
+  background-repeat: repeat-x;
   .navbar-nav{ 
     .nav-link{
       font-family: $font_navbar;
