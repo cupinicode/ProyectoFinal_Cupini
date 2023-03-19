@@ -6,8 +6,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 /*Importo mi PARTIAL que contiene las fuentes*/
 /*Archivo SASS que almacena todo lo referido a FUENTES y sus COLORES*/
-/*Defino 3 mapas*/
-/*En un MAP, no puedo incluir una fuente como valor, ya que contiene COMAS, que es el separador de claves*/
+/******En un MAP, no puedo incluir de manera directa una fuente como valor, 
+ya que contiene COMAS, que es el separador de claves.  Uso VARIABLES para ello******/
+/**********************************************************************************************/
+/**********************************************************************************************/
+/**********************************************************************************************/
 /*Reseteo*/
 * {
   margin: 0%;
@@ -27,8 +30,8 @@ h2 {
   /*Subtitulo FIJO de todas las paginas (La WEB de los.....)*/
   background-image: radial-gradient(cornsilk, rgb(240, 240, 152)); /*Gradiente muy suave*/
   text-align: center;
-  font-family: "Raleway", sans-serif;
-  color: rgb(26, 25, 25);
+  font-family: "Raleway", sans-serif; /* Accedo al mapa HEAD2*/
+  color: rgb(26, 25, 25); /* Accedo al mapa HEAD2*/
   font-size: 180%;
 }
 
@@ -36,25 +39,27 @@ h3 {
   /*Titulo de cada pagina del sitio*/
   text-align: center;
   padding: 5%;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Space Grotesk", sans-serif; /* Accedo al mapa HEAD3*/
+  color: deeppink; /* Accedo al mapa HEAD3*/
   font-weight: bolder;
-  color: deeppink;
 }
 
 h4 {
   /*Titulo de las cards*/
-  font-family: "Open Sans", sans-serif;
   font-weight: bolder;
   font-size: 100%;
   text-align: center;
+  font-family: "Open Sans", sans-serif; /* Accedo al mapa CARDS*/
+  color: red;
 }
 
 h6 {
   /*Solo se utiliza para los Footers*/
-  color: chocolate;
-  font-family: "Poppins", sans-serif;
   font-size: 150%;
   padding-top: 50px;
+  font-family: "Poppins", sans-serif; /* Accedo al mapa FOOTER*/
+  color: chocolate;
+  font-weight: bolder;
 }
 
 li { /*Ya no se usa, lo manejo con Bootstrap*/
@@ -78,9 +83,10 @@ p {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
-  background-color: bisque;
   margin: 20px;
+  font-family: "Raleway", sans-serif; /* Accedo al mapa BODY*/
+  background: bisque;
+  font-weight: bolder;
 }
 
 .cuerpo { /*Por ahora solo lo uso para centrar imagenes en el body*/
@@ -101,7 +107,7 @@ body {
 }
 
 form { /*Formulario de Contacto*/
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; /* Accedo al mapa FORM*/
   font-size: 1.4rem;
   padding: 20px;
   text-align: center;
@@ -123,7 +129,7 @@ form label {
 }
 
 .boton { /*Botones del Formulario de Contacto*/
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif; /* Accedo al mapa BOTON*/
   font-size: 100%; /*Accedo al mapa BOTON*/
   color: darkblue;
   background-color: khaki;
@@ -158,8 +164,8 @@ form label {
 }
 
 .selector {
+  font-family: "Poppins", sans-serif; /* Accedo al mapa SELECTOR*/
   font-size: 1.4rem;
-  font-family: "Poppins", sans-serif;
 }
 
 .centrado, .caja_videos { /*Contenedor de las CARDs*/
@@ -214,7 +220,7 @@ form label {
   background-repeat: repeat-x;
 }
 #navbarNavAltMarkup .navbar-nav .nav-link {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; /*Accedo al mapa NAVBAR*/
   font-size: 110%;
   color: yellow;
   border: 2px solid deeppink;

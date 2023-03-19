@@ -19,7 +19,8 @@
 
 h1 {
   /*Titulo de todas las paginas (WALKMANIAC)*/
-  font-family: $font_head;
+  //font-family: $font_head;
+  font-family: map-get($map: $head, $key: fuente);
   background-color: map-get($map: $head, $key: background ); /* Accedo al mapa HEAD*/
   color: map-get($map: $head, $key: color);// 
   text-align: center;
@@ -29,34 +30,36 @@ h2 {
   /*Subtitulo FIJO de todas las paginas (La WEB de los.....)*/
   background-image: radial-gradient((map-get($map: $head, $key: background ), rgb(240, 240, 152))); /*Gradiente muy suave*/
   text-align: center;
-  font-family: $font_head2; 
-  color: $color_head2;
-  font-size: 180%;
+  font-family: map-get($map: $head2, $key: fuente ); /* Accedo al mapa HEAD2*/ 
+  color: map-get($map: $head2, $key: color ); /* Accedo al mapa HEAD2*/
+  font-size: map-get($map: $head2, $key: tamanio );
 }
 
 h3 {
   /*Titulo de cada pagina del sitio*/
   text-align: center;
   padding: 5%;
-  font-family: $font_head3;
+  font-family: map-get($map: $head3, $key: fuente ); /* Accedo al mapa HEAD3*/ 
+  color: map-get($map: $head3, $key: color ); /* Accedo al mapa HEAD3*/
   font-weight: bolder;
-  color: $color_head3;
 }
 
 h4{
   /*Titulo de las cards*/
-  font-family: $font_card_tittle;
   font-weight: bolder;
   font-size: 100%;
   text-align: center;
+  font-family: map-get($map: $cards, $key: fuente ); /* Accedo al mapa CARDS*/ 
+  color: map-get($map: $cards, $key: color_card_title ); 
 }
 
 h6{
   /*Solo se utiliza para los Footers*/
-  color: $color_footer;
-  font-family: $font_footer;
   font-size: 150%;
   padding-top: 50px;
+  font-family: map-get($map: $footer, $key: fuente ); /* Accedo al mapa FOOTER*/ 
+  color: map-get($map: $footer, $key: color ); 
+  font-weight: bolder;
 }
 
 li { /*Ya no se usa, lo manejo con Bootstrap*/
@@ -73,16 +76,17 @@ a { /*Ya no se usa para el NAV, lo manejo con Bootstrap*/
 }
 
 p{
-  font-family: $font_p;
-  font-size: 1.5rem;
+  font-family: map-get($map: $p, $key: fuente);  // Accedo al mapa P (parrafos)
+  font-size: map-get($map: $p, $key: size);
   margin: 2rem;
   padding: 2rem;
 }
 
 body {
-	font-family: $font_body;
-	background-color: map-get($map: $body, $key: background);
   margin: 20px;
+  font-family: map-get($map: $body, $key: fuente ); /* Accedo al mapa BODY*/ 
+  background: map-get($map: $body, $key: background ); 
+  font-weight: bolder;
 }
 
 .cuerpo{ /*Por ahora solo lo uso para centrar imagenes en el body*/
@@ -103,12 +107,12 @@ body {
 }
 
 form { /*Formulario de Contacto*/
-  font-family: $font_form;
+  font-family: map-get($map: $form, $key: fuente ); /* Accedo al mapa FORM*/ 
   font-size: 1.4rem;
   padding: 20px;
   text-align: center;
   p{         /*Paragraph dentro del formulario de conatacto*/
-    color: $color_form_p;
+    color: map-get($map: $form, $key: color_form_p );
     font-size: 1.8rem;
     font-weight: bolder;
   }
@@ -125,7 +129,8 @@ form { /*Formulario de Contacto*/
 }
 
 .boton { /*Botones del Formulario de Contacto*/
-  font-family: $font_boton;
+
+  font-family: map-get($map: $boton, $key: fuente ); /* Accedo al mapa BOTON*/ 
   font-size: map-get($map: $boton, $key: size);  /*Accedo al mapa BOTON*/
   color: map-get($map: $boton, $key: color);
   background-color: map-get($map: $boton, $key: background);
@@ -156,12 +161,12 @@ form { /*Formulario de Contacto*/
 }
 
 .card-title{ /*Clase de Bootstrap, cambio algunos valores*/
-  color: $color_card_title;
+  color: map-get($map: $cards, $key: color_card_title);
 }
 
 .selector  {
-  font-size: 1.4rem;
-  font-family: $font_selector;
+  font-family: map-get($map: $selector, $key: fuente ); /* Accedo al mapa SELECTOR*/ 
+  font-size: map-get($map: $selector, $key: size);  
 }
 
 .centrado { /*Contenedor de las CARDs*/
@@ -219,8 +224,8 @@ form { /*Formulario de Contacto*/
   background-repeat: repeat-x;
   .navbar-nav{ 
     .nav-link{
-      font-family: $font_navbar;
-      font-size: $size_navbar;
+      font-family: map-get($map: $navbar, $key: fuente); /*Accedo al mapa NAVBAR*/
+      font-size: map-get($map: $navbar, $key: size); 
       color: yellow;
       border: 2px solid deeppink;
       border-radius: 1rem;
